@@ -1,0 +1,14 @@
+<div class="center">
+  <ion-item class="login-input">
+    <ion-label position="floating" class="login-placeholder">Usuário</ion-label>
+    <ion-input [(ngModel)]="this.user"></ion-input>
+  </ion-item>
+  <ion-item class="login-input">
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input [(ngModel)]="this.password" type="password"></ion-input>
+  </ion-item>
+  <div class="buttons">
+    <ion-button class="login-button" (click)="tryLogin()">Login</ion-button>
+    <ion-button class="login-button" (click)="redirecionarCriarConta()">Criar Conta</ion-button>
+  </div>
+</div>
